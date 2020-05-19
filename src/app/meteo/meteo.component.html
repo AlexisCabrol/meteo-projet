@@ -9,7 +9,8 @@
   </div>
   <div class="row">
     <div class="col-sm-3 cadre" *ngFor="let meteo of listeMeteo">
-        <app-meteo-item [meteo]="meteo"></app-meteo-item>
+        <app-meteo-item [meteo]="meteo"
+        (outputActionSuppression)="traitementSuppressionMeteo($event)"></app-meteo-item>
     </div>
   </div>
 </div>

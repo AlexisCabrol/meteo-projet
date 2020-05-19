@@ -36,4 +36,12 @@ export class MeteoComponent implements OnInit {
       this.villeARechercher = null;
     });
   }
+
+  /**
+   * Méthode permettant de faire un traitement pour la suppression d'un item météo
+   * @param meteo météo à supprimer
+   */
+  public traitementSuppressionMeteo(meteo: MeteoItem): void {
+    this.listeMeteo.splice(this.listeMeteo.indexOf(meteo), 1);
+  }
 }

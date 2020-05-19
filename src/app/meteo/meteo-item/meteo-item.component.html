@@ -24,4 +24,9 @@
     {{ 'temperature.max' | translate : {'0': meteo.main.temp_max } }}
     </div>
   </div>
+  <div class="row">
+    <div class="col-sm-12" style="text-align: center">
+      <img width="20" src="../../../assets/delete.png" (click)="suppressionMeteo()"/>
+    </div>
+  </div>
 </div>
