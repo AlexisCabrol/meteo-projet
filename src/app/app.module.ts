@@ -8,6 +8,7 @@ import { MeteoItemComponent } from './meteo/meteo-item/meteo-item.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
         deps: [HttpClient]
       }
     }),
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

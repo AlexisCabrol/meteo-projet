@@ -1,5 +1,13 @@
 <div class="container" style="margin-top: 30px;">
   <div class="row">
+    <div class="col-sm-9">
+      <input type="text" class="form-control" [(ngModel)]="villeARechercher"/>
+    </div>
+    <div class="col-sm-3">
+      <img class="add-btn" src="../../assets/add.png" (click)="ajouterMeteo()">
+    </div>
+  </div>
+  <div class="row">
     <div class="col-sm-3 cadre" *ngFor="let meteo of listeMeteo">
         <app-meteo-item [meteo]="meteo"></app-meteo-item>
     </div>
