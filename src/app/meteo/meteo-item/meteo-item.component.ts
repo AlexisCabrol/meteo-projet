@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {MeteoItem} from '../../models/MeteoItem';
 
 @Component({
   selector: 'app-meteo-item',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./meteo-item.component.css']
 })
 export class MeteoItemComponent implements OnInit {
+
+  // Element courant de météo
+  @Input() meteo: MeteoItem;
 
   constructor() { }
 
