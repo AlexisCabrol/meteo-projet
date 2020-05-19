@@ -1,5 +1,11 @@
 <div>
-  {{ meteo.name }}
-  {{ meteo.main.temp_min }}
-  {{ meteo.main.temp_max }}
+  <div class="col-sm-12 head">
+    {{ meteo.name }}
+  </div>
+  <div class="row">
+    {{ 'temperature.min' | translate : {'0': meteo.main.temp_min } }}
+  </div>
+  <div class="row">
+    {{ 'temperature.max' | translate : {'0': meteo.main.temp_max } }}
+  </div>
 </div>
