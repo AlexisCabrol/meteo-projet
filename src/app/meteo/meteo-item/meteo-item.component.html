@@ -1,11 +1,20 @@
 <div>
   <div class="col-sm-12 head">
-    {{ meteo.name }}
+    <strong>{{ meteo.name }}</strong>
   </div>
   <div class="row">
+    <div class="col-sm-12 head">
+      <img class="img-meteo-item" [src]="'../../../assets/img/' + meteo.weather[0].icon + '.png'" >
+    </div>
+  </div>
+  <div class="row head">
+    <div class="col-sm-6">
+      <img width="15" src="../../../assets/cold.png">
     {{ 'temperature.min' | translate : {'0': meteo.main.temp_min } }}
-  </div>
-  <div class="row">
+    </div>
+    <div class="col-sm-6">
+      <img width="15" src="../../../assets/hot.png">
     {{ 'temperature.max' | translate : {'0': meteo.main.temp_max } }}
+    </div>
   </div>
 </div>

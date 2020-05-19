@@ -15,5 +15,4 @@ export class MeteoItemComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
