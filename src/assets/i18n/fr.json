@@ -1,0 +1,6 @@
+{
+  "temperature": {
+    "min": "Min {{0}} °C",
+    "max": "Max {{0}} °C"
+  }
+}
