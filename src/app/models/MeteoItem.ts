@@ -6,4 +6,5 @@ export class MeteoItem extends JSONBuilder {
   name: string;
   main: any;
   weather: any;
+  sys: any;
 }
